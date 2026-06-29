@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exodus - Agencia de Viajes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#" class="logo">Exodus<span>.</span></a>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#hero" class="nav-link">Inicio</a></li>
+                    <li><a href="#services" class="nav-link">Servicios</a></li>
+                    <li><a href="#destinations" class="nav-link">Destinos</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonios</a></li>
+                    <li><a href="#contact" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Descubre lugares inolvidables</h1>
+                <p>Diseñamos viajes a medida para aventureros que buscan experiencias auténticas y seguras en todo el mundo.</p>
+                <a href="#destinations" class="btn-cta">Explorar Destinos</a>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">✈️</div>
+                    <a href="#vuelos-flexibles" class="promo-box">
+                    <h3>Vuelos Flexibles</h3>
+                    <p>Cambia tus fechas de viaje sin penalizaciones ni complicaciones de última hora.</p>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏨</div>
+                    <h3>Hoteles Premium</h3>
+                    <p>Alojamientos seleccionados minuciosamente con la mejor ubicación y calidad.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🗺️</div>
+                    <h3>Guías Locales</h3>
+                    <p>Expertos nativos que te mostrarán los secretos ocultos de cada cultura.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="destinations" class="destinations-section">
+            <h2 class="section-title">Destinos Destacados</h2>
+            <div class="destinations-grid">
+                <div class="dest-card">
+                    <div class="dest-img placeholder-japan"></div>
+                    <div class="dest-info">
+                        <h3>Tokio, Japón</h3>
+                        <p>Tradición y futuro.</p>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <div class="dest-img placeholder-iceland"></div>
+                    <div class="dest-info">
+                        <h3>Reikiavik, Islandia</h3>
+                        <p>Naturaleza indomable.</p>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <div class="dest-img placeholder-peru"></div>
+                    <div class="dest-info">
+                        <h3>Cusco, Perú</h3>
+                        <p>Historia ancestral.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <h2 class="section-title">Lo que dicen nuestros viajeros</h2>
+            <div class="testimonials-container">
+                <blockquote class="testimonial-card">
+                    <p class="testimonial-text">"El viaje a Japón superó todas nuestras expectativas. La organización fue impecable de principio a fin."</p>
+                    <cite class="testimonial-author">- Carlos Mendoza</cite>
+                </blockquote>
+                <blockquote class="testimonial-card">
+                    <p class="testimonial-text">"Viajar sola con Exodus me dio toda la seguridad que necesitaba. Los guías locales son excepcionales."</p>
+                    <cite class="testimonial-author">- Sofía Ortiz</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Planifica tu viaje</h2>
+            <div class="form-container">
+                <form id="travel-form" novalidate>
+                    <div class="form-group">
+                        <label for="username">Nombre completo</label>
+                        <input type="text" id="username" name="username" placeholder="Tu nombre">
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensaje / Plan de viaje</label>
+                        <textarea id="message" name="message" rows="5" placeholder="¿A dónde te gustaría viajar?"></textarea>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar Solicitud</button>
+                    <div class="success-message" id="form-success">¡Solicitud enviada con éxito! Nos contactaremos pronto.</div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Exodus Viajes. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="Facebook">Facebook</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Volver arriba">↑</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
